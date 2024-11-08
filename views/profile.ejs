@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head') %>
+    <title>Blog</title>
+  </head>
+  <body>
+    <%- include('./partials/nav') %>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header text-center">
+                <h2>User Profile</h2>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col-md-4 ms-4 font-weight-bold">
+                        <h4 class="d-inline">Name :</h4>
+                        <pre class="d-inline ms-3"><%= locals.loginuser.name %></pre>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-4 ms-4 font-weight-bold">
+                        <h4 class="d-inline">Email :</h4>
+                        <pre class="d-inline ms-3"><%= locals.loginuser.email %></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('./partials/script') %>
+  </body>
+</html>
